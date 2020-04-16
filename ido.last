@@ -1,0 +1,28 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/faraaz/oss/" . "loop/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/faraaz/oss/loop/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ 
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/faraaz/oss/loop/" (24205 50561 343577 96000) ".gitignore" "test.js" "README.md" "./" "Cargo.toml" "../" "Cargo.lock" "target/" "src/" ".git/" "LICENSE" "images/")
+
+ ("/home/faraaz/oss/" (24205 38098 183451 491000) "./" "../" "tmp/" "cli/" "blogs/" "loop/" "test/" "nodejs-tutorial/")
+
+ ("/home/faraaz/" (24215 10362 915280 298000) ".gconf/" ".flutter_tool_state" ".dart/" ".steam/" ".bash_logout" "Pictures/" ".ssh/" ".dbus/" ".tool-versions" ".rustup/" "./" ".config/" ".flutter" ".conda/" "../" ".nvidia-settings-rc" ".sudo_as_admin_successful" ".gnupg/" "Steam/" ".vue-templates/" ".steampid" ".condarc" "flutter_linux_v1.12.13+hotfix.8-stable.tar.xz" ".bashrc" ".mozilla/" ".psql_history" "oss/" ".gem/" ".degit/" "Documents/" ".ipython/" "flutter/" ".nv/" ".terminalizer/" ".emacs.d/" ".bash_history" ".pki/" ".flutter_settings" ".themes/" "snap/" "anaconda3/" "Downloads/" ".pulse-cookie" ".asdf/" ".pam_environment" ".jupyter/" "Public/" ".node_repl_history" ".cargo/" "Templates/" ".zoom/" ".cache/" ".dartServer/" ".vscode/" "Desktop/" ".angular-config.json" ".var/" ".bundle/" "Projects/" ".steampath" ".atom/" ".local/" ".npm/" ".yarnrc" "debugg/" "major/" ".pub-cache/" ".electron/" "Videos/" ".profile" ".wget-hsts" ".gitconfig" ".python_history" "optum.pdf" "Music/" ".devtools")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

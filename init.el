@@ -17,11 +17,17 @@
 (add-to-list 'default-frame-alist '(width . 150))
 
 ;; prevent adding/modifying entries in package-selected-packages
+;; TODO: doesn't work, fix it.
 (defun package--save-selected-packages (&rest opt)
   "Do not add or modify package-selected-packages list.
 whenever a package is installed or deleted; or package contents are refreshed.
 OPT variable (doesn't have a known use)"
   nil)
+
+;; enable ido everywhere
+(defvar ido-enable-flex-matching t)
+(defvar ido-everywhere t)
+(ido-mode 1)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

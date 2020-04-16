@@ -10,30 +10,18 @@
 
 ;;; Code:
 
-(tool-bar-mode -1) ; Disable Toolbar in GUI mode
-
-;; Set window height and width on startup
-(add-to-list 'default-frame-alist '(height . 40))
-(add-to-list 'default-frame-alist '(width . 150))
-
-;; prevent adding/modifying entries in package-selected-packages
 ;; TODO: doesn't work, fix it.
-(defun package--save-selected-packages (&rest opt)
-  "Do not add or modify package-selected-packages list.
-whenever a package is installed or deleted; or package contents are refreshed.
-OPT variable (doesn't have a known use)"
-  nil)
+;; prevent adding/modifying entries in package-selected-packages
+;; (defun package--save-selected-packages (&rest opt)
+;;   "Do not add or modify package-selected-packages list.
+;; whenever a package is installed or deleted; or package contents are refreshed.
+;; OPT variable (doesn't have a known use)"
+;;  nil)
 
 ;; enable ido everywhere
 (defvar ido-enable-flex-matching t)
 (defvar ido-everywhere t)
 (ido-mode 1)
-
-;; load gotham theme
-;; (load-theme 'gotham t)
-
-;; add line numbers to gutter
-(global-linum-mode t)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -51,11 +39,14 @@ OPT variable (doesn't have a known use)"
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "agave Nerd Font Mono" :foundry "PfEd" :slant normal :weight normal :height 130 :width normal)))))
+ ;; '(default ((t (:family "agave Nerd Font Mono" :foundry "PfEd" :slant normal :weight normal :height 130 :width normal))))
+ )
+
+;; load all basic configurations for the editor
+;; e.g. (font, window size, modeline config, linum-mode, etc)
+(load "~/.emacs.d/config.el")
 
 ;; load configuration for all external packages.
 (load "~/.emacs.d/packages.el")
-(when (memq window-system '(mac ns x))
-  (exec-path-from-shell-initialize))
 
 ;;; init.el ends here

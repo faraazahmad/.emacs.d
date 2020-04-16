@@ -1,0 +1,3 @@
+ls
+git add .
+git commit -m "add gotham theme and load by default"

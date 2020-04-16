@@ -2,6 +2,7 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/faraaz/" . ".emacs.d/")
  ("/home/faraaz/oss/" . "loop/")
 )
 
@@ -18,7 +19,9 @@
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/faraaz/.emacs.d/" (24216 14045 332557 109000) ".gitignore" "README.md" "url/" "packages.el" "transient/" "./" "../" "ido.last" "elpa/" ".git/" "init.el~" "init.el" "auto-save-list/" ".lsp-session-v1" "packages.el~" "ido.last~")
+ ("/home/faraaz/.emacs.d/" (24216 17046 47779 929000) ".gitignore" "README.md" "url/" "packages.el" "transient/" "./" "../" "ido.last" "eshell/" "elpa/" "config.el~" ".git/" "init.el~" "init.el" "auto-save-list/" "config.el" ".lsp-session-v1" "packages.el~" "ido.last~")
+
+ ("/home/faraaz/oss/loop/src/" (24215 19204 615409 270000) "./" "../" "terminal.rs" "config.rs" "row.rs" "filetype.rs" "main.rs" "highlighting.rs" "editor.rs" "document.rs")
 
  ("/home/faraaz/" (24216 10078 232314 896000) ".gconf/" ".flutter_tool_state" ".dart/" ".steam/" ".bash_logout" "Pictures/" ".ssh/" ".dbus/" ".tool-versions" ".rustup/" "./" ".config/" ".flutter" ".conda/" "../" ".nvidia-settings-rc" ".sudo_as_admin_successful" ".gnupg/" "Steam/" ".vue-templates/" ".steampid" ".condarc" "flutter_linux_v1.12.13+hotfix.8-stable.tar.xz" ".bashrc" ".mozilla/" ".psql_history" "oss/" ".gem/" ".degit/" "Documents/" ".ipython/" "flutter/" ".nv/" ".terminalizer/" ".emacs.d/" ".bash_history" ".pki/" ".flutter_settings" ".themes/" "snap/" "anaconda3/" "Downloads/" ".pulse-cookie" ".asdf/" ".pam_environment" ".jupyter/" "Public/" ".node_repl_history" ".cargo/" "Templates/" ".zoom/" ".cache/" ".dartServer/" ".vscode/" "Desktop/" ".angular-config.json" ".var/" ".bundle/" "Projects/" ".steampath" ".atom/" ".local/" ".npm/" ".yarnrc" "debugg/" "major/" ".pub-cache/" ".electron/" "Videos/" ".profile" ".wget-hsts" ".gitconfig" ".python_history" "optum.pdf" "Music/" ".devtools")
 

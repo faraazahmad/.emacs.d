@@ -17,11 +17,20 @@
 (add-to-list 'default-frame-alist '(width . 150))
 
 ;; prevent adding/modifying entries in package-selected-packages
+;; TODO: doesn't work, fix it.
 (defun package--save-selected-packages (&rest opt)
   "Do not add or modify package-selected-packages list.
 whenever a package is installed or deleted; or package contents are refreshed.
 OPT variable (doesn't have a known use)"
   nil)
+
+;; enable ido everywhere
+(defvar ido-enable-flex-matching t)
+(defvar ido-everywhere t)
+(ido-mode 1)
+
+;; load gotham theme
+(load-theme 'gotham t)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -31,9 +40,12 @@ OPT variable (doesn't have a known use)"
  '(ansi-color-faces-vector
    [default default default italic underline success warning error])
  '(custom-enabled-themes (quote (misterioso)))
+ '(custom-safe-themes
+   (quote
+    ("79485bab8bb220562d4acd003e4b6f1c9005af41e91f81b7a0e89b7e3a301203" default)))
  '(package-selected-packages
    (quote
-    (company-lsp toml-mode lsp-ui exec-path-from-shell flycheck-rust flyheck-rust cargo rustic use-package smooth-scrolling rust-mode magit lsp-mode flycheck evil-visual-mark-mode company))))
+    (gotham-theme company-lsp toml-mode lsp-ui exec-path-from-shell flycheck-rust flyheck-rust cargo rustic use-package smooth-scrolling rust-mode magit lsp-mode flycheck evil-visual-mark-mode company))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -44,5 +56,7 @@ OPT variable (doesn't have a known use)"
 
 ;; load configuration for all external packages.
 (load "~/.emacs.d/packages.el")
+(when (memq window-system '(mac ns x))
+  (exec-path-from-shell-initialize))
 
 ;;; init.el ends here

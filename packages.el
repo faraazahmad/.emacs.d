@@ -48,7 +48,8 @@
 (use-package lsp-mode
   :defer t
   :commands lsp
-  :config (add-hook 'rust-mode-hook #'lsp))
+  :config
+  (add-hook 'rust-mode-hook #'lsp)) ;; Add hook for rust-mode
 
 (use-package lsp-ui :defer t)
 (use-package company-lsp)
@@ -82,6 +83,14 @@
 (use-package magit :defer t)
 
 (use-package evil-visual-mark-mode :defer t)
+
+;; ------------------------------ THEMES ---------------------------------
+;; Use :init (load-theme ...) on the theme you want to set to default (see below)
+
+(use-package gotham-theme
+  :ensure t
+  :init
+  (load-theme 'gotham t))
 
 ;; ------------------------ PACKAGE LIST END ------------------------------
 

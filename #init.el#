@@ -29,8 +29,7 @@ OPT variable (doesn't have a known use)"
 (defvar ido-everywhere t)
 (ido-mode 1)
 
-;; load gotham theme
-;; (load-theme 'gotham t)
+
 
 ;; add line numbers to gutter
 (global-linum-mode t)
